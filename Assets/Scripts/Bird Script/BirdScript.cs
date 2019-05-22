@@ -13,6 +13,18 @@ public class BirdScript : MonoBehaviour
     [SerializeField]
     private Animator anim;
 
+    [SerializeField]
+    private AudioSource audioSource;
+
+    [SerializeField]
+    private AudioSource flapClick;
+
+    [SerializeField]
+    private AudioSource pointClip;
+
+    [SerializeField]
+    private AudioSource diedClip;
+
     private float fowardSpeed = 3f;
 
     private float bounceSpeed = 4f;

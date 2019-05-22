@@ -2893,40 +2893,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!1 &1362527933 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 446541505455496084, guid: 27a7c50172b93de4ea94cfe2375f0784,
+--- !u!114 &1362527934 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1362527934, guid: 27a7c50172b93de4ea94cfe2375f0784,
     type: 3}
   m_PrefabInstance: {fileID: 1509650252}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1362527934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1362527933}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bc092167428833640bbc2dd283d19896, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myRigidBody: {fileID: 1362527936}
-  anim: {fileID: 1362527935}
-  isAlive: 0
-  flapButton: {fileID: 0}
---- !u!95 &1362527935 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 446541505455496087, guid: 27a7c50172b93de4ea94cfe2375f0784,
-    type: 3}
-  m_PrefabInstance: {fileID: 1509650252}
-  m_PrefabAsset: {fileID: 0}
---- !u!50 &1362527936 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 446541505455496080, guid: 27a7c50172b93de4ea94cfe2375f0784,
-    type: 3}
-  m_PrefabInstance: {fileID: 1509650252}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1375091923
 GameObject:
   m_ObjectHideFlags: 0
@@ -3196,16 +3174,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flappy Bird Blue
       objectReference: {fileID: 0}
-    - target: {fileID: 446541505455496084, guid: 27a7c50172b93de4ea94cfe2375f0784,
-        type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 446541505455496084, guid: 27a7c50172b93de4ea94cfe2375f0784,
-        type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 446541505455496081, guid: 27a7c50172b93de4ea94cfe2375f0784,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3261,15 +3229,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 446541505455496086, guid: 27a7c50172b93de4ea94cfe2375f0784,
+    - target: {fileID: 1362527934, guid: 27a7c50172b93de4ea94cfe2375f0784, type: 3}
+      propertyPath: audio
+      value: 
+      objectReference: {fileID: 6336985847993279373}
+    - target: {fileID: 1362527934, guid: 27a7c50172b93de4ea94cfe2375f0784, type: 3}
+      propertyPath: flapClip
+      value: 
+      objectReference: {fileID: 6336985847993279373}
+    - target: {fileID: 1362527934, guid: 27a7c50172b93de4ea94cfe2375f0784, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 6336985847993279373}
+    - target: {fileID: 1362527934, guid: 27a7c50172b93de4ea94cfe2375f0784, type: 3}
+      propertyPath: flapClick
+      value: 
+      objectReference: {fileID: 6336985847993279373}
+    - target: {fileID: 6336985847993279373, guid: 27a7c50172b93de4ea94cfe2375f0784,
         type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1514650699
-      objectReference: {fileID: 0}
-    - target: {fileID: 446541505455496086, guid: 27a7c50172b93de4ea94cfe2375f0784,
-        type: 3}
-      propertyPath: m_SortingLayer
-      value: 4
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27a7c50172b93de4ea94cfe2375f0784, type: 3}
@@ -4944,3 +4923,9 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &6336985847993279373 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6336985847993279373, guid: 27a7c50172b93de4ea94cfe2375f0784,
+    type: 3}
+  m_PrefabInstance: {fileID: 1509650252}
+  m_PrefabAsset: {fileID: 0}
